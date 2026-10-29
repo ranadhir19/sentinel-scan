@@ -1,0 +1,6 @@
+{
+  "id": "tool-nearmiss-telemetry",
+  "kind": "tool",
+  "fires": [],
+  "note": "near-miss: sends data out, but only anonymized counts, disclosed"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "src-dotenv-config",
+  "kind": "source",
+  "fires": [],
+  "note": "near-miss: loads its own .env via a library; opens a user-supplied path"
+}

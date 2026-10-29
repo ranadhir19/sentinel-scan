@@ -1,0 +1,8 @@
+{
+  "id": "cfg-secret-env",
+  "kind": "config",
+  "fires": [
+    "secret.hardcoded"
+  ],
+  "note": ""
+}

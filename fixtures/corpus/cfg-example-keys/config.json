@@ -1,0 +1,1 @@
+{"mcpServers": {"docs-demo": {"command": "python", "args": ["demo.py"], "env": {"AWS_ACCESS_KEY_ID": "AKIAIOSFODNN7EXAMPLE", "API_KEY": "${API_KEY}", "OPENAI_API_KEY": "sk-example-00000000000000000000"}}}}

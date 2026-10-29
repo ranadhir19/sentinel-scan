@@ -1,0 +1,8 @@
+{
+  "id": "src-js-template-exec",
+  "kind": "source",
+  "fires": [
+    "sink.command-execution"
+  ],
+  "note": ""
+}

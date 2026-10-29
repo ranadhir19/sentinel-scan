@@ -1,0 +1,6 @@
+{
+  "id": "tool-nearmiss-cache",
+  "kind": "tool",
+  "fires": [],
+  "note": "near-miss: 'ignores previous' but about cache, not instructions"
+}

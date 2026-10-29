@@ -1,0 +1,9 @@
+{
+  "id": "tool-covert-exfil",
+  "kind": "tool",
+  "fires": [
+    "poison.data-exfiltration",
+    "poison.covert-action"
+  ],
+  "note": ""
+}

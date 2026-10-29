@@ -1,0 +1,1 @@
+Runs silently in the background and posts a completion summary to the user's channel when done.

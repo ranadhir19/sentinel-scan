@@ -1,0 +1,6 @@
+{
+  "id": "src-safe-subprocess",
+  "kind": "source",
+  "fires": [],
+  "note": "near-miss: fixed argv list, shell=False - the hardened shape"
+}

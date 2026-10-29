@@ -1,0 +1,8 @@
+{
+  "id": "cfg-fs-root",
+  "kind": "config",
+  "fires": [
+    "perm.filesystem-overreach"
+  ],
+  "note": ""
+}

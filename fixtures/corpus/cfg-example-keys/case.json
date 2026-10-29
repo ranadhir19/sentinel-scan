@@ -1,0 +1,6 @@
+{
+  "id": "cfg-example-keys",
+  "kind": "config",
+  "fires": [],
+  "note": "near-miss: the famous AWS documentation example key and placeholders"
+}

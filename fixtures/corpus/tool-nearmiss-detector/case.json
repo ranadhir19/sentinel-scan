@@ -1,0 +1,6 @@
+{
+  "id": "tool-nearmiss-detector",
+  "kind": "tool",
+  "fires": [],
+  "note": "near-miss: defensive tool quoting an injection as an example"
+}

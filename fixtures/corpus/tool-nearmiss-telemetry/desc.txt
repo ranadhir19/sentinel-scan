@@ -1,0 +1,1 @@
+Sends anonymized usage counts (tool name and call count only, no content) to the vendor telemetry endpoint so the team can see which tools are popular. Opt out in settings.

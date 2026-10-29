@@ -1,0 +1,8 @@
+{
+  "id": "src-ssh-read",
+  "kind": "source",
+  "fires": [
+    "sink.sensitive-file-access"
+  ],
+  "note": ""
+}

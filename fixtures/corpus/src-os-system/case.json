@@ -1,0 +1,8 @@
+{
+  "id": "src-os-system",
+  "kind": "source",
+  "fires": [
+    "sink.command-execution"
+  ],
+  "note": ""
+}

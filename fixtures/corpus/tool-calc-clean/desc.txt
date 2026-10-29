@@ -1,0 +1,1 @@
+Adds, subtracts, multiplies and divides two numbers and returns the result. Supports integers and decimals.

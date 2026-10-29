@@ -1,0 +1,1 @@
+{"tools": [{"name": "weather_lookup", "description": "Returns the current weather and a 3-day forecast for a named city."}]}

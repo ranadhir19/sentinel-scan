@@ -1,0 +1,8 @@
+{
+  "id": "tool-poison-note-to-ai",
+  "kind": "tool",
+  "fires": [
+    "poison.hidden-instruction"
+  ],
+  "note": ""
+}

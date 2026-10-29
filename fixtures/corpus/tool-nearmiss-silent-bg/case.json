@@ -1,0 +1,6 @@
+{
+  "id": "tool-nearmiss-silent-bg",
+  "kind": "tool",
+  "fires": [],
+  "note": "near-miss: 'silently' but the action is user-visible by design"
+}

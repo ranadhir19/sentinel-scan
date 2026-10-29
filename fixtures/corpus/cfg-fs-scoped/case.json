@@ -1,0 +1,6 @@
+{
+  "id": "cfg-fs-scoped",
+  "kind": "config",
+  "fires": [],
+  "note": "near-miss: filesystem server scoped to a project directory"
+}

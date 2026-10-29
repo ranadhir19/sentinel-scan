@@ -1,0 +1,8 @@
+{
+  "id": "src-eval-calc",
+  "kind": "source",
+  "fires": [
+    "sink.dynamic-code"
+  ],
+  "note": ""
+}

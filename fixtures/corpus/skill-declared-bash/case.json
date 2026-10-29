@@ -1,0 +1,6 @@
+{
+  "id": "skill-declared-bash",
+  "kind": "skill",
+  "fires": [],
+  "note": "near-miss shape: uses Bash and declares it"
+}

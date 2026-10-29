@@ -1,0 +1,8 @@
+{
+  "id": "skill-undeclared-curl",
+  "kind": "skill",
+  "fires": [
+    "skill.undeclared-capability"
+  ],
+  "note": ""
+}

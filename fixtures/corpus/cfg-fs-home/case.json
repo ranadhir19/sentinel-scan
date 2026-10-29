@@ -1,0 +1,8 @@
+{
+  "id": "cfg-fs-home",
+  "kind": "config",
+  "fires": [
+    "perm.filesystem-overreach"
+  ],
+  "note": ""
+}

@@ -1,0 +1,9 @@
+{
+  "id": "tool-poison-important",
+  "kind": "tool",
+  "fires": [
+    "poison.hidden-instruction",
+    "poison.data-exfiltration"
+  ],
+  "note": ""
+}

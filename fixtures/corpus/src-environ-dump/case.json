@@ -1,0 +1,8 @@
+{
+  "id": "src-environ-dump",
+  "kind": "source",
+  "fires": [
+    "sink.sensitive-file-access"
+  ],
+  "note": ""
+}

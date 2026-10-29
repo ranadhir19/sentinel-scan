@@ -1,0 +1,8 @@
+{
+  "id": "src-shell-true",
+  "kind": "source",
+  "fires": [
+    "sink.command-execution"
+  ],
+  "note": ""
+}

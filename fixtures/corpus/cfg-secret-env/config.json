@@ -1,0 +1,1 @@
+{"mcpServers": {"legacy-export": {"command": "python", "args": ["export.py"], "env": {"API_KEY": "sk-proj-9f4ac2bd81e04f7ab3c6d5e7f8091a2b3c4"}}, "aws-helper": {"command": "python", "args": ["aws.py"], "env": {"AWS_ACCESS_KEY_ID": "AKIA7F3K9Q2M8X4PL6ND"}}}}

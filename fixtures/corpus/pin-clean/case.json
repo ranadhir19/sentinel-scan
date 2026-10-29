@@ -1,0 +1,9 @@
+{
+  "id": "pin-clean",
+  "kind": "pinverify",
+  "fires": [],
+  "note": "",
+  "rules_scoped": [
+    "rugpull.description-changed"
+  ]
+}

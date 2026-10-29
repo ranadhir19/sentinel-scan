@@ -1,0 +1,1 @@
+{"mcpServers": {"filesystem": {"command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "./project-docs"], "env": {"API_KEY": "${API_KEY}"}}}}

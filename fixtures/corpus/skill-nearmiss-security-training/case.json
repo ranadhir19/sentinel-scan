@@ -1,0 +1,6 @@
+{
+  "id": "skill-nearmiss-security-training",
+  "kind": "skill",
+  "fires": [],
+  "note": "near-miss: a training skill quoting an injection inside a fence, framed as an example"
+}

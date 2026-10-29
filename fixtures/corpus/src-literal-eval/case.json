@@ -1,0 +1,6 @@
+{
+  "id": "src-literal-eval",
+  "kind": "source",
+  "fires": [],
+  "note": "near-miss: literal_eval is the safe alternative, not eval"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "pin-rugpull",
+  "kind": "pinverify",
+  "fires": [
+    "rugpull.description-changed"
+  ],
+  "note": "",
+  "rules_scoped": [
+    "rugpull.description-changed"
+  ],
+  "expect_units": {
+    "rugpull.description-changed": [
+      "weather_lookup"
+    ]
+  }
+}

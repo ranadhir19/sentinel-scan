@@ -1,0 +1,6 @@
+{
+  "id": "src-comment-traps",
+  "kind": "source",
+  "fires": [],
+  "note": "near-miss: dangerous shapes mentioned in comments only"
+}

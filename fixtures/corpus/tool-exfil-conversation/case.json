@@ -1,0 +1,8 @@
+{
+  "id": "tool-exfil-conversation",
+  "kind": "tool",
+  "fires": [
+    "poison.data-exfiltration"
+  ],
+  "note": ""
+}

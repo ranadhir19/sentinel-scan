@@ -1,0 +1,111 @@
+{
+  "corpus_cases": 32,
+  "per_rule": {
+    "poison.hidden-instruction": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 28,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "poison.data-exfiltration": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 27,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "poison.covert-action": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 29,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "rugpull.description-changed": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 31,
+      "cases": 32,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "sink.command-execution": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 27,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "sink.dynamic-code": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 29,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "sink.sensitive-file-access": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 28,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "secret.hardcoded": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 29,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "skill.instruction-malware": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 29,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "skill.undeclared-capability": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 29,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    },
+    "perm.filesystem-overreach": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 28,
+      "cases": 30,
+      "fp_rate": 0.0,
+      "fn_rate": 0.0
+    }
+  },
+  "totals": {
+    "tp": 18,
+    "fp": 0,
+    "fn": 0,
+    "tn": 314
+  },
+  "surprises": []
+}

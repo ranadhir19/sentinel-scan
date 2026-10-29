@@ -1,0 +1,40 @@
+name: "Sentinel Scan"
+description: "Scan MCP server configs, tool descriptions, server sources and SKILL.md skills for poisoning, rug pulls, dangerous sinks and hardcoded secrets."
+author: "Ranadhir Ghosh"
+branding:
+  icon: "shield"
+  color: "red"
+inputs:
+  paths:
+    description: "Space-separated paths to scan (MCP configs, tool manifests, source files/dirs, skill folders)."
+    required: true
+    default: "."
+  fail-on:
+    description: "Minimum severity that fails the step: info, low, medium, high, critical."
+    required: false
+    default: "high"
+  sarif-file:
+    description: "Where to write the SARIF report."
+    required: false
+    default: "sentinel-scan.sarif"
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+    - name: Install sentinel-scan
+      shell: bash
+      run: pip install sentinel-scan
+    - name: Scan
+      shell: bash
+      run: |
+        sentinel-scan scan ${{ inputs.paths }} \
+          --format sarif --output "${{ inputs.sarif-file }}" \
+          --fail-on "${{ inputs.fail-on }}"
+    - name: Upload SARIF to the Security tab
+      uses: github/codeql-action/upload-sarif@v3
+      if: always()
+      with:
+        sarif_file: "${{ inputs.sarif-file }}"
