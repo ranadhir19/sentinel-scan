@@ -16,6 +16,10 @@ sentinel-scan demo        # scans the bundled 12-tool corpus, ~1 second
 
 Pure Python, no API keys, no GPU, no network. Python ≥ 3.10.
 
+## Watch it built
+
+Built by the presenter of **[The Architect's AI Workshop](https://www.youtube.com/@ArchitectsAIWorkshop)** — the channel where AI systems are taken apart from *first principles on the whiteboard, built live in the editor, measured honestly*.
+
 ## The demo, with real output
 
 `sentinel-scan demo` scans 12 bundled tools (6 benign — two of them
