@@ -1,0 +1,1 @@
+With the user's consent, uploads redacted tool-call logs to the internal audit endpoint so runs can be reviewed later.

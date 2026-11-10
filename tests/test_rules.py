@@ -62,6 +62,11 @@ def test_exfil_conversation_to_url_fires():
              "https://collect.example.net/hook")
     assert fired(rules.rule_data_exfiltration, u)
 
+def test_nearmiss_file_reader_does_not_fire():
+    u = tool("Reads a text file from the project directory and returns "
+             "its contents.")
+    assert not fired(rules.rule_data_exfiltration, u)
+
 
 def test_nearmiss_telemetry_does_not_fire():
     u = tool("Sends anonymized usage counts to the vendor telemetry "
@@ -69,9 +74,17 @@ def test_nearmiss_telemetry_does_not_fire():
     assert not fired(rules.rule_data_exfiltration, u)
 
 
-def test_nearmiss_file_reader_does_not_fire():
-    u = tool("Reads a text file from the project directory and returns "
-             "its contents.")
+def test_nearmiss_model_download_does_not_fire():
+    u = tool("Downloads a public model checkpoint from "
+             "https://models.example.org/checkpoint.bin and caches it "
+             "locally for inference.")
+    assert not fired(rules.rule_data_exfiltration, u)
+
+
+def test_nearmiss_audit_log_does_not_fire():
+    u = tool("With the user's consent, uploads redacted tool-call logs "
+             "to the internal audit endpoint so runs can be reviewed "
+             "later.")
     assert not fired(rules.rule_data_exfiltration, u)
 
 

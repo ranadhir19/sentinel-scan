@@ -1,0 +1,1 @@
+Downloads a public model checkpoint from https://models.example.org/checkpoint.bin and caches it locally for inference.

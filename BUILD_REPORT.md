@@ -26,7 +26,7 @@ the parent verifies and pushes, per the standing pattern.
   changed or removed tools.
 - **GitHub Action** (`action.yml`, composite): setup-python → pip
   install → scan → upload SARIF via codeql-action.
-- **Labelled corpus:** `fixtures/corpus/` — 32 cases; every rule has
+- **Labelled corpus:** `fixtures/corpus/` — 34 cases; every rule has
   planted positives AND benign near-miss negatives (quoted-injection
   detector tool, "ignores previous cached results", AWS documentation
   example key, `ast.literal_eval`, fixed-argv `shell=False`
@@ -45,12 +45,15 @@ the parent verifies and pushes, per the standing pattern.
 
 ## Measured precision (the product's differentiator)
 
-`scripts/measure.py` over the 32-case labelled corpus
-(`data/precision.json`, spliced into the README by the script):
+`scripts/measure.py` over the 34-case labelled corpus
+(`data/precision.json`, spliced into the README by the script). Per-rule
+denominators follow each rule's scope: the two pin cases exercise only
+`rugpull.description-changed` (denominator 34); the other rules are
+scored on the remaining 32 cases.
 
-- **Totals: TP 18, FP 0, FN 0, TN 314 — FP rate 0.00% and FN rate
+- **Totals: TP 18, FP 0, FN 0, TN 338 — FP rate 0.00% and FN rate
   0.00% for every rule on this corpus.**
-- Honest scope: these are rates on a curated 32-case corpus built to
+- Honest scope: these are rates on a curated 34-case corpus built to
   include the known trap shapes, not a claim about arbitrary
   third-party servers. The corpus is versioned so the measurement is
   reproducible and extendable; the README says exactly this.

@@ -86,28 +86,32 @@ tab. (See `action.yml`.)
 
 Each rule is deliberately narrow: it fires on a specific, explainable
 signal shape. Rates below are measured by `scripts/measure.py` over the
-labelled corpus in `fixtures/corpus/` — 32 cases: planted positives and
-benign near-miss negatives for every rule (a defensive tool quoting an
-injection, the AWS documentation example key, `ast.literal_eval`,
-fixed-argv `subprocess`, a project-scoped filesystem server…). These
+labelled corpus in `fixtures/corpus/` — 34 cases: planted positives and
+benign near-miss negatives for every rule. Rules score only the cases
+in their scope: the two pin cases (`pin-clean`, `pin-rugpull`) exercise
+just `rugpull.description-changed`, so that rule's denominator is 34
+while every other rule's is 32. Near-miss negatives include a defensive
+tool quoting an injection, the AWS documentation example key,
+`ast.literal_eval`, fixed-argv `subprocess`, and a project-scoped
+filesystem server. These
 are corpus rates, not a promise about the open internet; the corpus is
 versioned in the repo so anyone can re-run or extend it.
 
 <!-- PRECISION:BEGIN -->
 | Rule | Cases | TP | FP | FN | FP rate | FN rate |
 |------|------:|---:|---:|---:|--------:|--------:|
-| poison.hidden-instruction | 30 | 2 | 0 | 0 | 0.00% | 0.00% |
-| poison.data-exfiltration | 30 | 3 | 0 | 0 | 0.00% | 0.00% |
-| poison.covert-action | 30 | 1 | 0 | 0 | 0.00% | 0.00% |
-| rugpull.description-changed | 32 | 1 | 0 | 0 | 0.00% | 0.00% |
-| sink.command-execution | 30 | 3 | 0 | 0 | 0.00% | 0.00% |
-| sink.dynamic-code | 30 | 1 | 0 | 0 | 0.00% | 0.00% |
-| sink.sensitive-file-access | 30 | 2 | 0 | 0 | 0.00% | 0.00% |
-| secret.hardcoded | 30 | 1 | 0 | 0 | 0.00% | 0.00% |
-| skill.instruction-malware | 30 | 1 | 0 | 0 | 0.00% | 0.00% |
-| skill.undeclared-capability | 30 | 1 | 0 | 0 | 0.00% | 0.00% |
-| perm.filesystem-overreach | 30 | 2 | 0 | 0 | 0.00% | 0.00% |
-| **All rules** | 32 cases | 18 | 0 | 0 | – | – |
+| poison.hidden-instruction | 32 | 2 | 0 | 0 | 0.00% | 0.00% |
+| poison.data-exfiltration | 32 | 3 | 0 | 0 | 0.00% | 0.00% |
+| poison.covert-action | 32 | 1 | 0 | 0 | 0.00% | 0.00% |
+| rugpull.description-changed | 34 | 1 | 0 | 0 | 0.00% | 0.00% |
+| sink.command-execution | 32 | 3 | 0 | 0 | 0.00% | 0.00% |
+| sink.dynamic-code | 32 | 1 | 0 | 0 | 0.00% | 0.00% |
+| sink.sensitive-file-access | 32 | 2 | 0 | 0 | 0.00% | 0.00% |
+| secret.hardcoded | 32 | 1 | 0 | 0 | 0.00% | 0.00% |
+| skill.instruction-malware | 32 | 1 | 0 | 0 | 0.00% | 0.00% |
+| skill.undeclared-capability | 32 | 1 | 0 | 0 | 0.00% | 0.00% |
+| perm.filesystem-overreach | 32 | 2 | 0 | 0 | 0.00% | 0.00% |
+| **All rules** | 34 cases | 18 | 0 | 0 | – | – |
 <!-- PRECISION:END -->
 
 Rule catalogue (severity, OWASP mapping):
