@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="sentinel-scan">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/><stop offset="100%" stop-color="#14263F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect x="64" y="72" width="72" height="6" fill="#F5B544"/>
+  <text x="64" y="155" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF">sentinel-scan</text>
+  <text x="64" y="215" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#CBD5E1"><tspan x="64" dy="0">Know what your agent's tools can do to you —</tspan><tspan x="64" dy="38">before you install them.</tspan></text>
+  <rect x="64" y="285" width="760" height="4" fill="#2DD4BF"/>
+  
+  <path d="M 1055 75 L 1170 115 V 190 C 1170 245 1125 285 1055 305 C 985 285 940 245 940 190 V 115 Z" fill="none" stroke="#2DD4BF" stroke-width="7" stroke-linejoin="round"/>
+  <g stroke="#F5B544" stroke-width="6" stroke-linecap="round">
+    <line x1="985" y1="155" x2="1125" y2="155"/><line x1="985" y1="190" x2="1125" y2="190"/><line x1="985" y1="225" x2="1085" y2="225"/>
+  </g>
+  <circle cx="1055" cy="190" r="8" fill="#2DD4BF"/>
+</svg>

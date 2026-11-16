@@ -1,3 +1,5 @@
+![sentinel-scan — Scan agent tools before installing](banner.svg)
+
 # Sentinel Scan
 
 **Know what your agent's tools can do to you — before you install them.**
