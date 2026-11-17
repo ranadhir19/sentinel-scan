@@ -12,7 +12,9 @@ the known failure of incumbent MCP scanners is precision: in an April
 2026 audit, 27 scanner detections boiled down to 6 genuine concerns.
 
 ```bash
-pip install sentinel-scan
+git clone https://github.com/ranadhir19/sentinel-scan.git
+cd sentinel-scan
+pip install .
 sentinel-scan demo        # scans the bundled 12-tool corpus, ~1 second
 ```
 
